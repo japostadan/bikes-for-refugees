@@ -35,6 +35,7 @@ h1,h2,h3,h4,h5,h6 {
 p {
   margin-top: 0;
   margin-bottom: 0;
+  font-size: larger;
 }
 
 .header,
@@ -124,8 +125,13 @@ button {
   padding: 0.6rem 0.9rem;
   border-radius: 4px;
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 0.95rem;
+}
+
+#active {
+  background: var(--white);
+  color: #c05326;
 }
 
 .header__actions button {
@@ -153,9 +159,9 @@ button:focus {
   background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
   background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat;
   padding: 2.5rem 1rem;
-  min-height: 320px;
+  min-height: 350px;
   width: 100%;
   margin-top: 2rem;
 }
@@ -178,7 +184,7 @@ button:focus {
 
 .heading-underline {
   position: relative;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--orange-light);
   font-size: 1rem;
@@ -204,18 +210,17 @@ button:focus {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  gap: 1rem;
-  margin-bottom: 1rem;
-  border: 1px solid var(--grey-light);
+  border: 2px solid var(--grey-light);
   border-radius: 4px;
-  padding: 0.5rem;
+  padding: 20px;
   width: 100%;
   background: #fff;
+  gap: 15px;
 }
 
 .learn-more {
   margin-top: 0.5rem;
-  padding: 1rem 0;
+  padding: 2rem 0;
   border-radius: 4px;
 }
 
@@ -233,9 +238,9 @@ button:focus {
 
 
 .faq__article {
-  border: 1px solid var(--grey-dark);
+  border: 2px solid var(--grey-light);
   flex: 1 1 auto;
-  padding: 1rem;
+  padding: 24px 55px 20px 25px;
   border-radius: 2px;
 }
 
@@ -252,16 +257,12 @@ button:focus {
 
 .article__summary {
   font-size: 0.9rem;
-  margin: 0;
-  line-height: 1.4;
   color: var(--grey-dark);
 }
 
 .article__thumbnail {
   object-fit: cover;
-  width: 8rem;
-  height: 5rem;
-  border-radius: 4px;
+  width: 100px;
   flex-shrink: 0;
 }
 
@@ -300,7 +301,6 @@ text-align: end;
 /* Sidebar */
 
 .sidebar {
-  position: sticky;
   top: 2rem;
   display: flex;
   flex-direction: column;
@@ -347,7 +347,6 @@ text-align: end;
   /* the main content area (announcement + main section) should grow */
   .content > #announcement-wrapper {
     flex: 1 1 auto;
-    padding-right: 2rem;
   }
 
   /* the sidebar wrapper stays a fixed width */

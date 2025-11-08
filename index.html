@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Bikes for Refugees provides donated bikes and accessories to refugees and asylum seekers in Scotland.">
 
     <link rel="dns-prefetch" href="//fonts.googleapis.com" />
     <link
@@ -46,9 +47,7 @@
         </ul>
       </nav>
 
-      <div class="header__actions">
-        <button type="button">Donate Now</button>
-      </div>
+        <button class="header__actions" type="button">Donate Now</button>
 
     </header>
 
@@ -62,15 +61,15 @@
         </section>
 
         <section class="main">
-          <header class="hero" id="hero-heading">
+          <header class="hero" id="hero-heading" fetchpriority="high">
             <h1>Bikes for Refugees</h1>
             <p>
               Providing donated bikes and accessories to refugees and asylum
               seekers in Scotland.
             </p>
             <div class="hero__actions">
-              <button type="button">Donate a bike today</button>
-              <button type="button">Volunteer</button>
+              <button href="#" type="button">Donate a bike today</button>
+              <button id="active" href="#" type="button">Volunteer</button>
             </div>
           </header>
 
@@ -111,13 +110,12 @@
             </article>
 
 
-            </div>
+            </divsection>
 
           </section>
       </div>
 
-      <div class="sidebar-wrapper">
-        <section class="sidebar">
+        <aside class="sidebar-wrapper sidebar">
           <h2 id="upcoming-events-heading" class="heading-underline">Upcoming events</h2>
 
           <article class="article">
@@ -185,7 +183,7 @@
           </a>
 
           </div>
-        </section>
+        </aside>
         </div>  
       </div>
     </main>
