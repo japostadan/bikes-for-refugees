@@ -187,7 +187,7 @@ body {
   border-radius: 4px;
   padding: 20px;
   width: 100%;
-  background: #fff;
+  background: var(--white);
   gap: 15px;
 }
 
