@@ -21,6 +21,15 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
+    <!-- Preload the LCP image with a high fetchpriority so it starts loading with the stylesheet. -->
+    <link
+      rel="preload"
+      fetchpriority="high"
+      as="image"
+      href="./images/header-bike.jpg"
+      type="image/jpg"
+    />
+
     <!-- Styles -->
     <link rel="stylesheet" href="styles/style.css" />
   </head>
