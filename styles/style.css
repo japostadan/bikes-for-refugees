@@ -5,37 +5,23 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
- * {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
- }
+}
 
-
-body,
-button {
+body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: var(--grey-dark);
-  font-size: 1rem;
-}
-
-h1,h2,h3,h4,h5,h6 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: larger;
 }
 
 .header,
@@ -64,7 +50,7 @@ p {
 
 /* Announcements */
 
-#announcement-wrapper {
+.announcement-wrapper {
   font-size: 0.85rem;
   margin-bottom: 2rem;
   width: 100%;
@@ -74,11 +60,9 @@ p {
   background-color: var(--orange-light);
   border-left: 4px solid var(--orange-dark);
   border-radius: 4px;
-  font-size: 0.85rem;
   line-height: 1.3;
   padding: 1.5rem 1rem;
   margin-bottom: 1rem;
-  width: 100%;
 }
 
 /* Navigation */
@@ -113,12 +97,9 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
 /* Buttons */
 
-.header__actions button,
-.hero__actions button,
-button {
+.button {
   background: var(--orange-dark);
   color: var(--white);
   border: none;
@@ -129,23 +110,20 @@ button {
   font-size: 0.95rem;
 }
 
-#active {
+.hero__actions .active-color {
   background: var(--white);
-  color: #c05326;
+  color: var(--orange-dark);
 }
 
-.header__actions button {
-  color: var(--white);
+.header__actions .button {
   padding: 0.4rem 0.75rem;
 }
 
-.header__actions button:hover,
-.hero__actions button:hover,
-button:focus {
+.button:hover,
+.button:focus {
   opacity: 0.9;
   outline: none;
 }
-
 
 .content {
   display: flex;
@@ -153,13 +131,9 @@ button:focus {
   gap: 2rem;
 }
 
-
-
 .hero {
-  background-image: url("../images/header-bike.jpg");
-  background-color: var(--grey-light);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: var(--grey-light) url("../images/header-bike.jpg") no-repeat
+    center / cover;
   padding: 2.5rem 1rem;
   min-height: 350px;
   width: 100%;
@@ -178,7 +152,6 @@ button:focus {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
-
 
 /* Headings */
 
@@ -214,7 +187,7 @@ button:focus {
   border-radius: 4px;
   padding: 20px;
   width: 100%;
-  background: #fff;
+  background: var(--white);
   gap: 15px;
 }
 
@@ -235,7 +208,6 @@ button:focus {
   justify-content: space-between;
   gap: 1rem;
 }
-
 
 .faq__article {
   border: 2px solid var(--grey-light);
@@ -282,11 +254,11 @@ button:focus {
   text-decoration: underline;
 }
 
-#fb__icon {
-text-align: end;
+.fb__icon {
+  text-align: end;
 }
 
-#fb__icon span {
+.fb__icon span {
   margin-right: 4px;
   font-size: 0.85rem;
 }
@@ -345,7 +317,7 @@ text-align: end;
   }
 
   /* the main content area (announcement + main section) should grow */
-  .content > #announcement-wrapper {
+  .content > .announcement-wrapper {
     flex: 1 1 auto;
   }
 
